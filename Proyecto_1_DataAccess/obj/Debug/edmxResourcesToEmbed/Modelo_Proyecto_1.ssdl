@@ -1,0 +1,423 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="BDPeliculasModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="Comentarios">
+    <Key>
+      <PropertyRef Name="IdComentario" />
+    </Key>
+    <Property Name="IdComentario" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="IdPelicula" Type="int" />
+    <Property Name="IdUsuario" Type="int" />
+    <Property Name="ComentarioTexto" Type="varchar" MaxLength="500" Nullable="false" />
+    <Property Name="IdComentarioPadre" Type="int" />
+    <Property Name="Fecha" Type="date" />
+  </EntityType>
+  <EntityType Name="Criticos">
+    <Key>
+      <PropertyRef Name="IdCritico" />
+    </Key>
+    <Property Name="IdCritico" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Nombre" Type="varchar" MaxLength="50" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Criticos_Calificacion">
+    <Key>
+      <PropertyRef Name="IdCriticoCalificacion" />
+    </Key>
+    <Property Name="IdCriticoCalificacion" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="IdCritico" Type="int" Nullable="false" />
+    <Property Name="IdPelicula" Type="int" />
+    <Property Name="Calificacion" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Involucrados">
+    <Key>
+      <PropertyRef Name="IdInvolucrado" />
+    </Key>
+    <Property Name="IdInvolucrado" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Nombre" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="Apellidos" Type="varchar" MaxLength="75" Nullable="false" />
+    <Property Name="Facebook" Type="varchar" MaxLength="100" />
+    <Property Name="Instagram" Type="varchar" MaxLength="100" />
+    <Property Name="Twitter" Type="varchar" MaxLength="100" />
+    <Property Name="Otros" Type="varchar" MaxLength="100" />
+  </EntityType>
+  <EntityType Name="Involucrados_Info">
+    <Key>
+      <PropertyRef Name="IdInvolucradoInfo" />
+    </Key>
+    <Property Name="IdInvolucradoInfo" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="IdInvolucrado" Type="int" />
+    <Property Name="IdRol" Type="int" />
+    <Property Name="IdPelicula" Type="int" />
+    <Property Name="OrdenAparicion" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Peliculas">
+    <Key>
+      <PropertyRef Name="IdPelicula" />
+    </Key>
+    <Property Name="IdPelicula" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Nombre" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="Descripcion" Type="varchar(max)" />
+    <Property Name="Poster" Type="varchar(max)" />
+    <Property Name="Fecha" Type="date" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Roles">
+    <Key>
+      <PropertyRef Name="IdRol" />
+    </Key>
+    <Property Name="IdRol" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Nombre" Type="varchar" MaxLength="25" Nullable="false" />
+  </EntityType>
+  <EntityType Name="sysdiagrams">
+    <Key>
+      <PropertyRef Name="diagram_id" />
+    </Key>
+    <Property Name="name" Type="nvarchar" MaxLength="128" Nullable="false" />
+    <Property Name="principal_id" Type="int" Nullable="false" />
+    <Property Name="diagram_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="version" Type="int" />
+    <Property Name="definition" Type="varbinary(max)" />
+  </EntityType>
+  <EntityType Name="Usuarios">
+    <Key>
+      <PropertyRef Name="IdUsuario" />
+    </Key>
+    <Property Name="IdUsuario" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Usuario" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="Clave" Type="char" MaxLength="20" Nullable="false" />
+    <Property Name="Nombre" Type="varchar" MaxLength="50" />
+    <Property Name="Apellidos" Type="varchar" MaxLength="100" />
+    <Property Name="Correo" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="Estado" Type="int" Nullable="false" />
+  </EntityType>
+  <Association Name="FK__Comentari__IdCom__44FF419A">
+    <End Role="Comentarios" Type="Self.Comentarios" Multiplicity="0..1" />
+    <End Role="Comentarios1" Type="Self.Comentarios" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Comentarios">
+        <PropertyRef Name="IdComentario" />
+      </Principal>
+      <Dependent Role="Comentarios1">
+        <PropertyRef Name="IdComentarioPadre" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Comentari__IdPel__45F365D3">
+    <End Role="Peliculas" Type="Self.Peliculas" Multiplicity="0..1" />
+    <End Role="Comentarios" Type="Self.Comentarios" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Peliculas">
+        <PropertyRef Name="IdPelicula" />
+      </Principal>
+      <Dependent Role="Comentarios">
+        <PropertyRef Name="IdPelicula" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Comentari__IdUsu__46E78A0C">
+    <End Role="Usuarios" Type="Self.Usuarios" Multiplicity="0..1" />
+    <End Role="Comentarios" Type="Self.Comentarios" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Usuarios">
+        <PropertyRef Name="IdUsuario" />
+      </Principal>
+      <Dependent Role="Comentarios">
+        <PropertyRef Name="IdUsuario" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Criticos___IdCri__47DBAE45">
+    <End Role="Criticos" Type="Self.Criticos" Multiplicity="1" />
+    <End Role="Criticos_Calificacion" Type="Self.Criticos_Calificacion" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Criticos">
+        <PropertyRef Name="IdCritico" />
+      </Principal>
+      <Dependent Role="Criticos_Calificacion">
+        <PropertyRef Name="IdCritico" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Criticos___IdCri__48CFD27E">
+    <End Role="Criticos" Type="Self.Criticos" Multiplicity="1" />
+    <End Role="Criticos_Calificacion" Type="Self.Criticos_Calificacion" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Criticos">
+        <PropertyRef Name="IdCritico" />
+      </Principal>
+      <Dependent Role="Criticos_Calificacion">
+        <PropertyRef Name="IdCritico" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Criticos___IdPel__49C3F6B7">
+    <End Role="Peliculas" Type="Self.Peliculas" Multiplicity="0..1" />
+    <End Role="Criticos_Calificacion" Type="Self.Criticos_Calificacion" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Peliculas">
+        <PropertyRef Name="IdPelicula" />
+      </Principal>
+      <Dependent Role="Criticos_Calificacion">
+        <PropertyRef Name="IdPelicula" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Criticos___IdPel__4AB81AF0">
+    <End Role="Peliculas" Type="Self.Peliculas" Multiplicity="0..1" />
+    <End Role="Criticos_Calificacion" Type="Self.Criticos_Calificacion" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Peliculas">
+        <PropertyRef Name="IdPelicula" />
+      </Principal>
+      <Dependent Role="Criticos_Calificacion">
+        <PropertyRef Name="IdPelicula" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Involucra__IdInv__4BAC3F29">
+    <End Role="Involucrados" Type="Self.Involucrados" Multiplicity="0..1" />
+    <End Role="Involucrados_Info" Type="Self.Involucrados_Info" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Involucrados">
+        <PropertyRef Name="IdInvolucrado" />
+      </Principal>
+      <Dependent Role="Involucrados_Info">
+        <PropertyRef Name="IdInvolucrado" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Involucra__IdInv__4CA06362">
+    <End Role="Involucrados" Type="Self.Involucrados" Multiplicity="0..1" />
+    <End Role="Involucrados_Info" Type="Self.Involucrados_Info" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Involucrados">
+        <PropertyRef Name="IdInvolucrado" />
+      </Principal>
+      <Dependent Role="Involucrados_Info">
+        <PropertyRef Name="IdInvolucrado" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Involucra__IdPel__4D94879B">
+    <End Role="Peliculas" Type="Self.Peliculas" Multiplicity="0..1" />
+    <End Role="Involucrados_Info" Type="Self.Involucrados_Info" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Peliculas">
+        <PropertyRef Name="IdPelicula" />
+      </Principal>
+      <Dependent Role="Involucrados_Info">
+        <PropertyRef Name="IdPelicula" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Involucra__IdPel__4E88ABD4">
+    <End Role="Peliculas" Type="Self.Peliculas" Multiplicity="0..1" />
+    <End Role="Involucrados_Info" Type="Self.Involucrados_Info" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Peliculas">
+        <PropertyRef Name="IdPelicula" />
+      </Principal>
+      <Dependent Role="Involucrados_Info">
+        <PropertyRef Name="IdPelicula" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Involucra__IdRol__4F7CD00D">
+    <End Role="Roles" Type="Self.Roles" Multiplicity="0..1" />
+    <End Role="Involucrados_Info" Type="Self.Involucrados_Info" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Roles">
+        <PropertyRef Name="IdRol" />
+      </Principal>
+      <Dependent Role="Involucrados_Info">
+        <PropertyRef Name="IdRol" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Involucra__IdRol__5070F446">
+    <End Role="Roles" Type="Self.Roles" Multiplicity="0..1" />
+    <End Role="Involucrados_Info" Type="Self.Involucrados_Info" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Roles">
+        <PropertyRef Name="IdRol" />
+      </Principal>
+      <Dependent Role="Involucrados_Info">
+        <PropertyRef Name="IdRol" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Function Name="fn_diagramobjects" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="true" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" ReturnType="int" />
+  <Function Name="ObtenerCriticos" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="Nombre" Type="varchar" Mode="In" />
+  </Function>
+  <Function Name="ObtenerInvolucrados" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="Nombre" Type="varchar" Mode="In" />
+  </Function>
+  <Function Name="SP_ActivarInactivarUsuario" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="IdUsuario" Type="int" Mode="In" />
+    <Parameter Name="Activar" Type="bit" Mode="In" />
+  </Function>
+  <Function Name="sp_alterdiagram" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="diagramname" Type="nvarchar" Mode="In" />
+    <Parameter Name="owner_id" Type="int" Mode="In" />
+    <Parameter Name="version" Type="int" Mode="In" />
+    <Parameter Name="definition" Type="varbinary(max)" Mode="In" />
+  </Function>
+  <Function Name="SP_BuscarPeliculaPorNombre" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="NombrePelicula" Type="varchar" Mode="In" />
+  </Function>
+  <Function Name="sp_creatediagram" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="diagramname" Type="nvarchar" Mode="In" />
+    <Parameter Name="owner_id" Type="int" Mode="In" />
+    <Parameter Name="version" Type="int" Mode="In" />
+    <Parameter Name="definition" Type="varbinary(max)" Mode="In" />
+  </Function>
+  <Function Name="sp_dropdiagram" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="diagramname" Type="nvarchar" Mode="In" />
+    <Parameter Name="owner_id" Type="int" Mode="In" />
+  </Function>
+  <Function Name="sp_helpdiagramdefinition" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="diagramname" Type="nvarchar" Mode="In" />
+    <Parameter Name="owner_id" Type="int" Mode="In" />
+  </Function>
+  <Function Name="sp_helpdiagrams" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="diagramname" Type="nvarchar" Mode="In" />
+    <Parameter Name="owner_id" Type="int" Mode="In" />
+  </Function>
+  <Function Name="SP_Mantenimiento_Comentarios" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="IdComentario" Type="int" Mode="In" />
+    <Parameter Name="IdUsuario" Type="int" Mode="In" />
+    <Parameter Name="IdPelicula" Type="int" Mode="In" />
+    <Parameter Name="ComentarioTexto" Type="varchar" Mode="In" />
+    <Parameter Name="IdComentarioPadre" Type="int" Mode="In" />
+    <Parameter Name="OP" Type="int" Mode="In" />
+  </Function>
+  <Function Name="SP_Mantenimiento_InfoInv" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="IdInvolucradoInfo" Type="int" Mode="In" />
+    <Parameter Name="IdInvolucrado" Type="int" Mode="In" />
+    <Parameter Name="IdRol" Type="int" Mode="In" />
+    <Parameter Name="IdPelicula" Type="int" Mode="In" />
+    <Parameter Name="OrdenAparicion" Type="int" Mode="In" />
+    <Parameter Name="OP" Type="int" Mode="In" />
+  </Function>
+  <Function Name="SP_Mantenimiento_Peliculas" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="IdPelicula" Type="int" Mode="In" />
+    <Parameter Name="Nombre" Type="varchar" Mode="In" />
+    <Parameter Name="Descripcion" Type="varchar" Mode="In" />
+    <Parameter Name="Poster" Type="varchar(max)" Mode="In" />
+    <Parameter Name="Fecha" Type="date" Mode="In" />
+    <Parameter Name="OP" Type="int" Mode="In" />
+  </Function>
+  <Function Name="SP_MantenimientoInvolucrados" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="IdInvolucrado" Type="int" Mode="In" />
+    <Parameter Name="Nombre" Type="varchar" Mode="In" />
+    <Parameter Name="Apellidos" Type="varchar" Mode="In" />
+    <Parameter Name="Facebook" Type="varchar" Mode="In" />
+    <Parameter Name="Twiter" Type="varchar" Mode="In" />
+    <Parameter Name="Instagram" Type="varchar" Mode="In" />
+    <Parameter Name="Otros" Type="varchar" Mode="In" />
+    <Parameter Name="OP" Type="int" Mode="In" />
+  </Function>
+  <Function Name="SP_MantenimientosCalificacion" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="IdCriticoCalificacion" Type="int" Mode="In" />
+    <Parameter Name="IdCritico" Type="int" Mode="In" />
+    <Parameter Name="IdPelicula" Type="int" Mode="In" />
+    <Parameter Name="Calificacion" Type="int" Mode="In" />
+    <Parameter Name="OP" Type="int" Mode="In" />
+  </Function>
+  <Function Name="SP_MantenimientosCriticos" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="IdCritico" Type="int" Mode="In" />
+    <Parameter Name="Nombre" Type="varchar" Mode="In" />
+    <Parameter Name="OP" Type="int" Mode="In" />
+  </Function>
+  <Function Name="SP_MantenimientosRoles" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="IdRol" Type="int" Mode="In" />
+    <Parameter Name="Nombre" Type="varchar" Mode="In" />
+    <Parameter Name="OP" Type="int" Mode="In" />
+  </Function>
+  <Function Name="SP_MantenimientoUsuarios" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="Operacion" Type="int" Mode="In" />
+    <Parameter Name="IdUsuario" Type="int" Mode="In" />
+    <Parameter Name="Usuario" Type="varchar" Mode="In" />
+    <Parameter Name="Clave" Type="char" Mode="In" />
+    <Parameter Name="Nombre" Type="varchar" Mode="In" />
+    <Parameter Name="Apellidos" Type="varchar" Mode="In" />
+    <Parameter Name="Correo" Type="varchar" Mode="In" />
+    <Parameter Name="Estado" Type="int" Mode="In" />
+  </Function>
+  <Function Name="SP_ObtenerInformacionPeliculaPorID" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="IdPelicula" Type="int" Mode="In" />
+  </Function>
+  <Function Name="SP_ObtenerInformacionPeliculaRecientes" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+  <Function Name="sp_renamediagram" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="diagramname" Type="nvarchar" Mode="In" />
+    <Parameter Name="owner_id" Type="int" Mode="In" />
+    <Parameter Name="new_diagramname" Type="nvarchar" Mode="In" />
+  </Function>
+  <Function Name="sp_upgraddiagrams" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+  <Function Name="SP_VerificarUsuario" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="Usuario" Type="varchar" Mode="In" />
+    <Parameter Name="Clave" Type="char" Mode="In" />
+  </Function>
+  <EntityContainer Name="BDPeliculasModelStoreContainer">
+    <EntitySet Name="Comentarios" EntityType="Self.Comentarios" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Criticos" EntityType="Self.Criticos" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Criticos_Calificacion" EntityType="Self.Criticos_Calificacion" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Involucrados" EntityType="Self.Involucrados" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Involucrados_Info" EntityType="Self.Involucrados_Info" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Peliculas" EntityType="Self.Peliculas" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Roles" EntityType="Self.Roles" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagrams" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Usuarios" EntityType="Self.Usuarios" Schema="dbo" store:Type="Tables" />
+    <AssociationSet Name="FK__Comentari__IdCom__44FF419A" Association="Self.FK__Comentari__IdCom__44FF419A">
+      <End Role="Comentarios" EntitySet="Comentarios" />
+      <End Role="Comentarios1" EntitySet="Comentarios" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Comentari__IdPel__45F365D3" Association="Self.FK__Comentari__IdPel__45F365D3">
+      <End Role="Peliculas" EntitySet="Peliculas" />
+      <End Role="Comentarios" EntitySet="Comentarios" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Comentari__IdUsu__46E78A0C" Association="Self.FK__Comentari__IdUsu__46E78A0C">
+      <End Role="Usuarios" EntitySet="Usuarios" />
+      <End Role="Comentarios" EntitySet="Comentarios" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Criticos___IdCri__47DBAE45" Association="Self.FK__Criticos___IdCri__47DBAE45">
+      <End Role="Criticos" EntitySet="Criticos" />
+      <End Role="Criticos_Calificacion" EntitySet="Criticos_Calificacion" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Criticos___IdCri__48CFD27E" Association="Self.FK__Criticos___IdCri__48CFD27E">
+      <End Role="Criticos" EntitySet="Criticos" />
+      <End Role="Criticos_Calificacion" EntitySet="Criticos_Calificacion" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Criticos___IdPel__49C3F6B7" Association="Self.FK__Criticos___IdPel__49C3F6B7">
+      <End Role="Peliculas" EntitySet="Peliculas" />
+      <End Role="Criticos_Calificacion" EntitySet="Criticos_Calificacion" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Criticos___IdPel__4AB81AF0" Association="Self.FK__Criticos___IdPel__4AB81AF0">
+      <End Role="Peliculas" EntitySet="Peliculas" />
+      <End Role="Criticos_Calificacion" EntitySet="Criticos_Calificacion" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Involucra__IdInv__4BAC3F29" Association="Self.FK__Involucra__IdInv__4BAC3F29">
+      <End Role="Involucrados" EntitySet="Involucrados" />
+      <End Role="Involucrados_Info" EntitySet="Involucrados_Info" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Involucra__IdInv__4CA06362" Association="Self.FK__Involucra__IdInv__4CA06362">
+      <End Role="Involucrados" EntitySet="Involucrados" />
+      <End Role="Involucrados_Info" EntitySet="Involucrados_Info" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Involucra__IdPel__4D94879B" Association="Self.FK__Involucra__IdPel__4D94879B">
+      <End Role="Peliculas" EntitySet="Peliculas" />
+      <End Role="Involucrados_Info" EntitySet="Involucrados_Info" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Involucra__IdPel__4E88ABD4" Association="Self.FK__Involucra__IdPel__4E88ABD4">
+      <End Role="Peliculas" EntitySet="Peliculas" />
+      <End Role="Involucrados_Info" EntitySet="Involucrados_Info" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Involucra__IdRol__4F7CD00D" Association="Self.FK__Involucra__IdRol__4F7CD00D">
+      <End Role="Roles" EntitySet="Roles" />
+      <End Role="Involucrados_Info" EntitySet="Involucrados_Info" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Involucra__IdRol__5070F446" Association="Self.FK__Involucra__IdRol__5070F446">
+      <End Role="Roles" EntitySet="Roles" />
+      <End Role="Involucrados_Info" EntitySet="Involucrados_Info" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

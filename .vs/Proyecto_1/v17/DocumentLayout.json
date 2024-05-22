@@ -1,0 +1,54 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\sofia\\Downloads\\Proyecto_1\\Proyecto_1\\Proyecto_1\\Proyecto_1\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{E209D139-41EB-4A6C-A07B-6E411DF48BB1}|Proyecto_1_DataAccess\\Proyecto_1_DataAccess.csproj|c:\\users\\sofia\\downloads\\proyecto_1\\proyecto_1\\proyecto_1\\proyecto_1\\proyecto_1_dataaccess\\app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{E209D139-41EB-4A6C-A07B-6E411DF48BB1}|Proyecto_1_DataAccess\\Proyecto_1_DataAccess.csproj|solutionrelative:proyecto_1_dataaccess\\app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{358C95BC-786B-4957-BAE4-9131FBCFD40E}|Proyecto_1\\Proyecto_1.csproj|c:\\users\\sofia\\downloads\\proyecto_1\\proyecto_1\\proyecto_1\\proyecto_1\\proyecto_1\\controllers\\comentarioscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{358C95BC-786B-4957-BAE4-9131FBCFD40E}|Proyecto_1\\Proyecto_1.csproj|solutionrelative:proyecto_1\\controllers\\comentarioscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 1,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedHeight": 171,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "App.config",
+              "DocumentMoniker": "C:\\Users\\sofia\\Downloads\\Proyecto_1\\Proyecto_1\\Proyecto_1\\Proyecto_1\\Proyecto_1_DataAccess\\App.config",
+              "RelativeDocumentMoniker": "Proyecto_1_DataAccess\\App.config",
+              "ToolTip": "C:\\Users\\sofia\\Downloads\\Proyecto_1\\Proyecto_1\\Proyecto_1\\Proyecto_1\\Proyecto_1_DataAccess\\App.config",
+              "RelativeToolTip": "Proyecto_1_DataAccess\\App.config",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
+              "WhenOpened": "2024-05-22T03:59:21.936Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ComentariosController.cs",
+              "DocumentMoniker": "C:\\Users\\sofia\\Downloads\\Proyecto_1\\Proyecto_1\\Proyecto_1\\Proyecto_1\\Proyecto_1\\Controllers\\ComentariosController.cs",
+              "RelativeDocumentMoniker": "Proyecto_1\\Controllers\\ComentariosController.cs",
+              "ToolTip": "C:\\Users\\sofia\\Downloads\\Proyecto_1\\Proyecto_1\\Proyecto_1\\Proyecto_1\\Proyecto_1\\Controllers\\ComentariosController.cs",
+              "RelativeToolTip": "Proyecto_1\\Controllers\\ComentariosController.cs",
+              "ViewState": "AQIAAMQAAAAAAAAAAAAAANIAAAAjAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-22T03:58:50.953Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

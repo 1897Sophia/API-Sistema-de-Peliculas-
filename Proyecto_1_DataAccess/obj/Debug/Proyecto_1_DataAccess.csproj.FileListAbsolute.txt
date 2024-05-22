@@ -1,0 +1,72 @@
+C:\Users\user\Desktop\Proyecto_1_PV\Proyecto_1\Proyecto_1_DataAccess\bin\Debug\Proyecto_1_DataAccess.dll.config
+C:\Users\user\Desktop\Proyecto_1_PV\Proyecto_1\Proyecto_1_DataAccess\bin\Debug\Proyecto_1_DataAccess.dll
+C:\Users\user\Desktop\Proyecto_1_PV\Proyecto_1\Proyecto_1_DataAccess\bin\Debug\Proyecto_1_DataAccess.pdb
+C:\Users\user\Desktop\Proyecto_1_PV\Proyecto_1\Proyecto_1_DataAccess\bin\Debug\EntityFramework.dll
+C:\Users\user\Desktop\Proyecto_1_PV\Proyecto_1\Proyecto_1_DataAccess\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\user\Desktop\Proyecto_1_PV\Proyecto_1\Proyecto_1_DataAccess\bin\Debug\EntityFramework.xml
+C:\Users\user\Desktop\Proyecto_1_PV\Proyecto_1\Proyecto_1_DataAccess\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\user\Desktop\Proyecto_1_PV\Proyecto_1\Proyecto_1_DataAccess\obj\Debug\Proyecto_1_DataAccess.csproj.AssemblyReference.cache
+C:\Users\user\Desktop\Proyecto_1_PV\Proyecto_1\Proyecto_1_DataAccess\obj\Debug\Proyecto_1_DataAccess.csproj.CoreCompileInputs.cache
+C:\Users\user\Desktop\Proyecto_1_PV\Proyecto_1\Proyecto_1_DataAccess\obj\Debug\Proyecto_1_DataAccess.csproj.CopyComplete
+C:\Users\user\Desktop\Proyecto_1_PV\Proyecto_1\Proyecto_1_DataAccess\obj\Debug\Proyecto_1_DataAccess.dll
+C:\Users\user\Desktop\Proyecto_1_PV\Proyecto_1\Proyecto_1_DataAccess\obj\Debug\Proyecto_1_DataAccess.pdb
+D:\CURSOS\PROGRA V\Proyectos\Proyecto 1\Proyecto Actual\Proyecto_1_PV\Proyecto_1\Proyecto_1_DataAccess\bin\Debug\Proyecto_1_DataAccess.dll.config
+D:\CURSOS\PROGRA V\Proyectos\Proyecto 1\Proyecto Actual\Proyecto_1_PV\Proyecto_1\Proyecto_1_DataAccess\bin\Debug\Proyecto_1_DataAccess.dll
+D:\CURSOS\PROGRA V\Proyectos\Proyecto 1\Proyecto Actual\Proyecto_1_PV\Proyecto_1\Proyecto_1_DataAccess\bin\Debug\Proyecto_1_DataAccess.pdb
+D:\CURSOS\PROGRA V\Proyectos\Proyecto 1\Proyecto Actual\Proyecto_1_PV\Proyecto_1\Proyecto_1_DataAccess\bin\Debug\EntityFramework.dll
+D:\CURSOS\PROGRA V\Proyectos\Proyecto 1\Proyecto Actual\Proyecto_1_PV\Proyecto_1\Proyecto_1_DataAccess\bin\Debug\EntityFramework.SqlServer.dll
+D:\CURSOS\PROGRA V\Proyectos\Proyecto 1\Proyecto Actual\Proyecto_1_PV\Proyecto_1\Proyecto_1_DataAccess\bin\Debug\EntityFramework.xml
+D:\CURSOS\PROGRA V\Proyectos\Proyecto 1\Proyecto Actual\Proyecto_1_PV\Proyecto_1\Proyecto_1_DataAccess\bin\Debug\EntityFramework.SqlServer.xml
+D:\CURSOS\PROGRA V\Proyectos\Proyecto 1\Proyecto Actual\Proyecto_1_PV\Proyecto_1\Proyecto_1_DataAccess\obj\Debug\Proyecto_1_DataAccess.csproj.AssemblyReference.cache
+D:\CURSOS\PROGRA V\Proyectos\Proyecto 1\Proyecto Actual\Proyecto_1_PV\Proyecto_1\Proyecto_1_DataAccess\obj\Debug\Proyecto_1_DataAccess.csproj.CoreCompileInputs.cache
+D:\CURSOS\PROGRA V\Proyectos\Proyecto 1\Proyecto Actual\Proyecto_1_PV\Proyecto_1\Proyecto_1_DataAccess\obj\Debug\Proyecto_1_DataAccess.csproj.CopyComplete
+D:\CURSOS\PROGRA V\Proyectos\Proyecto 1\Proyecto Actual\Proyecto_1_PV\Proyecto_1\Proyecto_1_DataAccess\obj\Debug\Proyecto_1_DataAccess.dll
+D:\CURSOS\PROGRA V\Proyectos\Proyecto 1\Proyecto Actual\Proyecto_1_PV\Proyecto_1\Proyecto_1_DataAccess\obj\Debug\Proyecto_1_DataAccess.pdb
+C:\Users\sofia\OneDrive\Escritorio\Proyecto_1_PrograV\Proyecto_1\Proyecto_1_DataAccess\bin\Debug\Proyecto_1_DataAccess.dll.config
+C:\Users\sofia\OneDrive\Escritorio\Proyecto_1_PrograV\Proyecto_1\Proyecto_1_DataAccess\bin\Debug\Proyecto_1_DataAccess.dll
+C:\Users\sofia\OneDrive\Escritorio\Proyecto_1_PrograV\Proyecto_1\Proyecto_1_DataAccess\bin\Debug\Proyecto_1_DataAccess.pdb
+C:\Users\sofia\OneDrive\Escritorio\Proyecto_1_PrograV\Proyecto_1\Proyecto_1_DataAccess\bin\Debug\EntityFramework.dll
+C:\Users\sofia\OneDrive\Escritorio\Proyecto_1_PrograV\Proyecto_1\Proyecto_1_DataAccess\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\sofia\OneDrive\Escritorio\Proyecto_1_PrograV\Proyecto_1\Proyecto_1_DataAccess\bin\Debug\EntityFramework.xml
+C:\Users\sofia\OneDrive\Escritorio\Proyecto_1_PrograV\Proyecto_1\Proyecto_1_DataAccess\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\sofia\OneDrive\Escritorio\Proyecto_1_PrograV\Proyecto_1\Proyecto_1_DataAccess\obj\Debug\Proyecto_1_DataAccess.csproj.AssemblyReference.cache
+C:\Users\sofia\OneDrive\Escritorio\Proyecto_1_PrograV\Proyecto_1\Proyecto_1_DataAccess\obj\Debug\Proyecto_1_DataAccess.csproj.CoreCompileInputs.cache
+C:\Users\sofia\OneDrive\Escritorio\Proyecto_1_PrograV\Proyecto_1\Proyecto_1_DataAccess\obj\Debug\Proyecto_1_DataAccess.csproj.CopyComplete
+C:\Users\sofia\OneDrive\Escritorio\Proyecto_1_PrograV\Proyecto_1\Proyecto_1_DataAccess\obj\Debug\Proyecto_1_DataAccess.dll
+C:\Users\sofia\OneDrive\Escritorio\Proyecto_1_PrograV\Proyecto_1\Proyecto_1_DataAccess\obj\Debug\Proyecto_1_DataAccess.pdb
+C:\Users\user\Desktop\Proyecto_1\Proyecto_1\Proyecto_1_DataAccess\bin\Debug\Proyecto_1_DataAccess.dll.config
+C:\Users\user\Desktop\Proyecto_1\Proyecto_1\Proyecto_1_DataAccess\bin\Debug\Proyecto_1_DataAccess.dll
+C:\Users\user\Desktop\Proyecto_1\Proyecto_1\Proyecto_1_DataAccess\bin\Debug\Proyecto_1_DataAccess.pdb
+C:\Users\user\Desktop\Proyecto_1\Proyecto_1\Proyecto_1_DataAccess\bin\Debug\EntityFramework.dll
+C:\Users\user\Desktop\Proyecto_1\Proyecto_1\Proyecto_1_DataAccess\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\user\Desktop\Proyecto_1\Proyecto_1\Proyecto_1_DataAccess\bin\Debug\EntityFramework.xml
+C:\Users\user\Desktop\Proyecto_1\Proyecto_1\Proyecto_1_DataAccess\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\user\Desktop\Proyecto_1\Proyecto_1\Proyecto_1_DataAccess\obj\Debug\Proyecto_1_DataAccess.csproj.AssemblyReference.cache
+C:\Users\user\Desktop\Proyecto_1\Proyecto_1\Proyecto_1_DataAccess\obj\Debug\Proyecto_1_DataAccess.csproj.CoreCompileInputs.cache
+C:\Users\user\Desktop\Proyecto_1\Proyecto_1\Proyecto_1_DataAccess\obj\Debug\Proyecto_1_DataAccess.csproj.CopyComplete
+C:\Users\user\Desktop\Proyecto_1\Proyecto_1\Proyecto_1_DataAccess\obj\Debug\Proyecto_1_DataAccess.dll
+C:\Users\user\Desktop\Proyecto_1\Proyecto_1\Proyecto_1_DataAccess\obj\Debug\Proyecto_1_DataAccess.pdb
+C:\Users\sofia\OneDrive\Escritorio\Proyecto2\Proyecto_1\Proyecto_1\Proyecto_1\Proyecto_1_DataAccess\bin\Debug\Proyecto_1_DataAccess.dll.config
+C:\Users\sofia\OneDrive\Escritorio\Proyecto2\Proyecto_1\Proyecto_1\Proyecto_1\Proyecto_1_DataAccess\bin\Debug\Proyecto_1_DataAccess.dll
+C:\Users\sofia\OneDrive\Escritorio\Proyecto2\Proyecto_1\Proyecto_1\Proyecto_1\Proyecto_1_DataAccess\bin\Debug\Proyecto_1_DataAccess.pdb
+C:\Users\sofia\OneDrive\Escritorio\Proyecto2\Proyecto_1\Proyecto_1\Proyecto_1\Proyecto_1_DataAccess\bin\Debug\EntityFramework.dll
+C:\Users\sofia\OneDrive\Escritorio\Proyecto2\Proyecto_1\Proyecto_1\Proyecto_1\Proyecto_1_DataAccess\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\sofia\OneDrive\Escritorio\Proyecto2\Proyecto_1\Proyecto_1\Proyecto_1\Proyecto_1_DataAccess\bin\Debug\EntityFramework.xml
+C:\Users\sofia\OneDrive\Escritorio\Proyecto2\Proyecto_1\Proyecto_1\Proyecto_1\Proyecto_1_DataAccess\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\sofia\OneDrive\Escritorio\Proyecto2\Proyecto_1\Proyecto_1\Proyecto_1\Proyecto_1_DataAccess\obj\Debug\Proyecto_1_DataAccess.csproj.AssemblyReference.cache
+C:\Users\sofia\OneDrive\Escritorio\Proyecto2\Proyecto_1\Proyecto_1\Proyecto_1\Proyecto_1_DataAccess\obj\Debug\Proyecto_1_DataAccess.csproj.CoreCompileInputs.cache
+C:\Users\sofia\OneDrive\Escritorio\Proyecto2\Proyecto_1\Proyecto_1\Proyecto_1\Proyecto_1_DataAccess\obj\Debug\Proyecto_1_DataAccess.csproj.CopyComplete
+C:\Users\sofia\OneDrive\Escritorio\Proyecto2\Proyecto_1\Proyecto_1\Proyecto_1\Proyecto_1_DataAccess\obj\Debug\Proyecto_1_DataAccess.dll
+C:\Users\sofia\OneDrive\Escritorio\Proyecto2\Proyecto_1\Proyecto_1\Proyecto_1\Proyecto_1_DataAccess\obj\Debug\Proyecto_1_DataAccess.pdb
+C:\Users\sofia\Downloads\Proyecto_1\Proyecto_1\Proyecto_1\Proyecto_1\Proyecto_1_DataAccess\bin\Debug\Proyecto_1_DataAccess.dll.config
+C:\Users\sofia\Downloads\Proyecto_1\Proyecto_1\Proyecto_1\Proyecto_1\Proyecto_1_DataAccess\bin\Debug\Proyecto_1_DataAccess.dll
+C:\Users\sofia\Downloads\Proyecto_1\Proyecto_1\Proyecto_1\Proyecto_1\Proyecto_1_DataAccess\bin\Debug\Proyecto_1_DataAccess.pdb
+C:\Users\sofia\Downloads\Proyecto_1\Proyecto_1\Proyecto_1\Proyecto_1\Proyecto_1_DataAccess\bin\Debug\EntityFramework.dll
+C:\Users\sofia\Downloads\Proyecto_1\Proyecto_1\Proyecto_1\Proyecto_1\Proyecto_1_DataAccess\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\sofia\Downloads\Proyecto_1\Proyecto_1\Proyecto_1\Proyecto_1\Proyecto_1_DataAccess\bin\Debug\EntityFramework.xml
+C:\Users\sofia\Downloads\Proyecto_1\Proyecto_1\Proyecto_1\Proyecto_1\Proyecto_1_DataAccess\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\sofia\Downloads\Proyecto_1\Proyecto_1\Proyecto_1\Proyecto_1\Proyecto_1_DataAccess\obj\Debug\Proyecto_1_DataAccess.csproj.AssemblyReference.cache
+C:\Users\sofia\Downloads\Proyecto_1\Proyecto_1\Proyecto_1\Proyecto_1\Proyecto_1_DataAccess\obj\Debug\Proyecto_1_DataAccess.csproj.CoreCompileInputs.cache
+C:\Users\sofia\Downloads\Proyecto_1\Proyecto_1\Proyecto_1\Proyecto_1\Proyecto_1_DataAccess\obj\Debug\Proyecto.98F6E4B1.Up2Date
+C:\Users\sofia\Downloads\Proyecto_1\Proyecto_1\Proyecto_1\Proyecto_1\Proyecto_1_DataAccess\obj\Debug\Proyecto_1_DataAccess.dll
+C:\Users\sofia\Downloads\Proyecto_1\Proyecto_1\Proyecto_1\Proyecto_1\Proyecto_1_DataAccess\obj\Debug\Proyecto_1_DataAccess.pdb

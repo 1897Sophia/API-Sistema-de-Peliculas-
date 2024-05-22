@@ -1,0 +1,196 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="BDPeliculasModelStoreContainer" CdmEntityContainer="BDPeliculasEntities">
+    <EntitySetMapping Name="Comentarios">
+      <EntityTypeMapping TypeName="BDPeliculasModel.Comentarios">
+        <MappingFragment StoreEntitySet="Comentarios">
+          <ScalarProperty Name="IdComentario" ColumnName="IdComentario" />
+          <ScalarProperty Name="IdPelicula" ColumnName="IdPelicula" />
+          <ScalarProperty Name="IdUsuario" ColumnName="IdUsuario" />
+          <ScalarProperty Name="ComentarioTexto" ColumnName="ComentarioTexto" />
+          <ScalarProperty Name="IdComentarioPadre" ColumnName="IdComentarioPadre" />
+          <ScalarProperty Name="Fecha" ColumnName="Fecha" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Criticos">
+      <EntityTypeMapping TypeName="BDPeliculasModel.Criticos">
+        <MappingFragment StoreEntitySet="Criticos">
+          <ScalarProperty Name="IdCritico" ColumnName="IdCritico" />
+          <ScalarProperty Name="Nombre" ColumnName="Nombre" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Criticos_Calificacion">
+      <EntityTypeMapping TypeName="BDPeliculasModel.Criticos_Calificacion">
+        <MappingFragment StoreEntitySet="Criticos_Calificacion">
+          <ScalarProperty Name="IdCriticoCalificacion" ColumnName="IdCriticoCalificacion" />
+          <ScalarProperty Name="IdCritico" ColumnName="IdCritico" />
+          <ScalarProperty Name="IdPelicula" ColumnName="IdPelicula" />
+          <ScalarProperty Name="Calificacion" ColumnName="Calificacion" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Involucrados">
+      <EntityTypeMapping TypeName="BDPeliculasModel.Involucrados">
+        <MappingFragment StoreEntitySet="Involucrados">
+          <ScalarProperty Name="IdInvolucrado" ColumnName="IdInvolucrado" />
+          <ScalarProperty Name="Nombre" ColumnName="Nombre" />
+          <ScalarProperty Name="Apellidos" ColumnName="Apellidos" />
+          <ScalarProperty Name="Facebook" ColumnName="Facebook" />
+          <ScalarProperty Name="Instagram" ColumnName="Instagram" />
+          <ScalarProperty Name="Twitter" ColumnName="Twitter" />
+          <ScalarProperty Name="Otros" ColumnName="Otros" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Involucrados_Info">
+      <EntityTypeMapping TypeName="BDPeliculasModel.Involucrados_Info">
+        <MappingFragment StoreEntitySet="Involucrados_Info">
+          <ScalarProperty Name="IdInvolucradoInfo" ColumnName="IdInvolucradoInfo" />
+          <ScalarProperty Name="IdInvolucrado" ColumnName="IdInvolucrado" />
+          <ScalarProperty Name="IdRol" ColumnName="IdRol" />
+          <ScalarProperty Name="IdPelicula" ColumnName="IdPelicula" />
+          <ScalarProperty Name="OrdenAparicion" ColumnName="OrdenAparicion" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Peliculas">
+      <EntityTypeMapping TypeName="BDPeliculasModel.Peliculas">
+        <MappingFragment StoreEntitySet="Peliculas">
+          <ScalarProperty Name="IdPelicula" ColumnName="IdPelicula" />
+          <ScalarProperty Name="Nombre" ColumnName="Nombre" />
+          <ScalarProperty Name="Descripcion" ColumnName="Descripcion" />
+          <ScalarProperty Name="Poster" ColumnName="Poster" />
+          <ScalarProperty Name="Fecha" ColumnName="Fecha" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Roles">
+      <EntityTypeMapping TypeName="BDPeliculasModel.Roles">
+        <MappingFragment StoreEntitySet="Roles">
+          <ScalarProperty Name="IdRol" ColumnName="IdRol" />
+          <ScalarProperty Name="Nombre" ColumnName="Nombre" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="sysdiagrams">
+      <EntityTypeMapping TypeName="BDPeliculasModel.sysdiagrams">
+        <MappingFragment StoreEntitySet="sysdiagrams">
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="principal_id" ColumnName="principal_id" />
+          <ScalarProperty Name="diagram_id" ColumnName="diagram_id" />
+          <ScalarProperty Name="version" ColumnName="version" />
+          <ScalarProperty Name="definition" ColumnName="definition" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Usuarios">
+      <EntityTypeMapping TypeName="BDPeliculasModel.Usuarios">
+        <MappingFragment StoreEntitySet="Usuarios">
+          <ScalarProperty Name="IdUsuario" ColumnName="IdUsuario" />
+          <ScalarProperty Name="Usuario" ColumnName="Usuario" />
+          <ScalarProperty Name="Clave" ColumnName="Clave" />
+          <ScalarProperty Name="Nombre" ColumnName="Nombre" />
+          <ScalarProperty Name="Apellidos" ColumnName="Apellidos" />
+          <ScalarProperty Name="Correo" ColumnName="Correo" />
+          <ScalarProperty Name="Estado" ColumnName="Estado" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <FunctionImportMapping FunctionImportName="ObtenerCriticos" FunctionName="BDPeliculasModel.Store.ObtenerCriticos">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="BDPeliculasModel.ObtenerCriticos_Result">
+          <ScalarProperty Name="IdCritico" ColumnName="IdCritico" />
+          <ScalarProperty Name="Nombre" ColumnName="Nombre" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="ObtenerInvolucrados" FunctionName="BDPeliculasModel.Store.ObtenerInvolucrados">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="BDPeliculasModel.ObtenerInvolucrados_Result">
+          <ScalarProperty Name="IdInvolucrado" ColumnName="IdInvolucrado" />
+          <ScalarProperty Name="Nombre" ColumnName="Nombre" />
+          <ScalarProperty Name="Apellidos" ColumnName="Apellidos" />
+          <ScalarProperty Name="Facebook" ColumnName="Facebook" />
+          <ScalarProperty Name="Instagram" ColumnName="Instagram" />
+          <ScalarProperty Name="Twitter" ColumnName="Twitter" />
+          <ScalarProperty Name="Otros" ColumnName="Otros" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="SP_ActivarInactivarUsuario" FunctionName="BDPeliculasModel.Store.SP_ActivarInactivarUsuario" />
+    <FunctionImportMapping FunctionImportName="sp_alterdiagram" FunctionName="BDPeliculasModel.Store.sp_alterdiagram" />
+    <FunctionImportMapping FunctionImportName="SP_BuscarPeliculaPorNombre" FunctionName="BDPeliculasModel.Store.SP_BuscarPeliculaPorNombre">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="BDPeliculasModel.SP_BuscarPeliculaPorNombre_Result">
+          <ScalarProperty Name="idPelicula" ColumnName="idPelicula" />
+          <ScalarProperty Name="Nombre" ColumnName="Nombre" />
+          <ScalarProperty Name="Descripcion" ColumnName="Descripcion" />
+          <ScalarProperty Name="Poster" ColumnName="Poster" />
+          <ScalarProperty Name="Fecha" ColumnName="Fecha" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="sp_creatediagram" FunctionName="BDPeliculasModel.Store.sp_creatediagram" />
+    <FunctionImportMapping FunctionImportName="sp_dropdiagram" FunctionName="BDPeliculasModel.Store.sp_dropdiagram" />
+    <FunctionImportMapping FunctionImportName="sp_helpdiagramdefinition" FunctionName="BDPeliculasModel.Store.sp_helpdiagramdefinition">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="BDPeliculasModel.sp_helpdiagramdefinition_Result">
+          <ScalarProperty Name="version" ColumnName="version" />
+          <ScalarProperty Name="definition" ColumnName="definition" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="sp_helpdiagrams" FunctionName="BDPeliculasModel.Store.sp_helpdiagrams">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="BDPeliculasModel.sp_helpdiagrams_Result">
+          <ScalarProperty Name="Database" ColumnName="Database" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Owner" ColumnName="Owner" />
+          <ScalarProperty Name="OwnerID" ColumnName="OwnerID" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="SP_Mantenimiento_Comentarios" FunctionName="BDPeliculasModel.Store.SP_Mantenimiento_Comentarios" />
+    <FunctionImportMapping FunctionImportName="SP_Mantenimiento_InfoInv" FunctionName="BDPeliculasModel.Store.SP_Mantenimiento_InfoInv" />
+    <FunctionImportMapping FunctionImportName="SP_Mantenimiento_Peliculas" FunctionName="BDPeliculasModel.Store.SP_Mantenimiento_Peliculas" />
+    <FunctionImportMapping FunctionImportName="SP_MantenimientoInvolucrados" FunctionName="BDPeliculasModel.Store.SP_MantenimientoInvolucrados" />
+    <FunctionImportMapping FunctionImportName="SP_MantenimientosCalificacion" FunctionName="BDPeliculasModel.Store.SP_MantenimientosCalificacion" />
+    <FunctionImportMapping FunctionImportName="SP_MantenimientosCriticos" FunctionName="BDPeliculasModel.Store.SP_MantenimientosCriticos" />
+    <FunctionImportMapping FunctionImportName="SP_MantenimientosRoles" FunctionName="BDPeliculasModel.Store.SP_MantenimientosRoles" />
+    <FunctionImportMapping FunctionImportName="SP_MantenimientoUsuarios" FunctionName="BDPeliculasModel.Store.SP_MantenimientoUsuarios" />
+    <FunctionImportMapping FunctionImportName="SP_ObtenerInformacionPeliculaPorID" FunctionName="BDPeliculasModel.Store.SP_ObtenerInformacionPeliculaPorID">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="BDPeliculasModel.SP_ObtenerInformacionPeliculaPorID_Result">
+          <ScalarProperty Name="IdPelicula" ColumnName="IdPelicula" />
+          <ScalarProperty Name="Poster" ColumnName="Poster" />
+          <ScalarProperty Name="NombrePelicula" ColumnName="NombrePelicula" />
+          <ScalarProperty Name="Descripcion" ColumnName="Descripcion" />
+          <ScalarProperty Name="Fecha" ColumnName="Fecha" />
+          <ScalarProperty Name="Involucrados" ColumnName="Involucrados" />
+          <ScalarProperty Name="Comentarios" ColumnName="Comentarios" />
+          <ScalarProperty Name="Calificaciones" ColumnName="Calificaciones" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="SP_ObtenerInformacionPeliculaRecientes" FunctionName="BDPeliculasModel.Store.SP_ObtenerInformacionPeliculaRecientes">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="BDPeliculasModel.SP_ObtenerInformacionPeliculaRecientes_Result">
+          <ScalarProperty Name="IdPelicula" ColumnName="IdPelicula" />
+          <ScalarProperty Name="Poster" ColumnName="Poster" />
+          <ScalarProperty Name="NombrePelicula" ColumnName="NombrePelicula" />
+          <ScalarProperty Name="Descripcion" ColumnName="Descripcion" />
+          <ScalarProperty Name="Fecha" ColumnName="Fecha" />
+          <ScalarProperty Name="Involucrados" ColumnName="Involucrados" />
+          <ScalarProperty Name="Comentarios" ColumnName="Comentarios" />
+          <ScalarProperty Name="Calificaciones" ColumnName="Calificaciones" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="sp_renamediagram" FunctionName="BDPeliculasModel.Store.sp_renamediagram" />
+    <FunctionImportMapping FunctionImportName="sp_upgraddiagrams" FunctionName="BDPeliculasModel.Store.sp_upgraddiagrams" />
+    <FunctionImportMapping FunctionImportName="SP_VerificarUsuario" FunctionName="BDPeliculasModel.Store.SP_VerificarUsuario" />
+  </EntityContainerMapping>
+</Mapping>
